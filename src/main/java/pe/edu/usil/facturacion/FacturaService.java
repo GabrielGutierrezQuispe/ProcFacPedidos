@@ -1,4 +1,4 @@
-package pe.edu.usil.facade;
+package pe.edu.usil.facturacion;
 
 public interface FacturaService {
 
