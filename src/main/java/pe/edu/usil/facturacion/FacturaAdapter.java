@@ -8,7 +8,8 @@ public class FacturaAdapter implements FacturaService {
     }
 
     @Override
-    public String generarFactura(String cliente, String producto, int cantidad, double subtotal, double igv, double total) {
-        return legacy.issueDocument(cliente, producto, cantidad, subtotal, igv, total);
+    public String generarFactura(String cliente, String producto, int cantidad,
+                                 double subtotal, double impuesto, double total) {
+        return legacy.issueDocument(cliente, producto, cantidad, subtotal, impuesto, total);
     }
 }
